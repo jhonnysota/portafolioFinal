@@ -1,13 +1,13 @@
 import React from "react";
 import "./Cover.css";
-import coverVideo from "../../media/coverVideo.mp4";
+import coverVideo from "../../media/video1.mp4";
 
 const Cover = () => {
   return (
     <div className="cover-container">
       <video className="video" src={coverVideo} autoPlay loop muted />
-      <h1>Name Last Name</h1>
-      <p>Developer | Designer | Content Creator | Entrepeneur </p>
+      <h1>JHONNY SOTA </h1>
+      <p>Developer | SQL | REACTJS | REDUX </p>
     </div>
   );
 };

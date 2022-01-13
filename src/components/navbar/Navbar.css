@@ -20,3 +20,25 @@
   color: white;
   cursor: pointer;
 }
+
+.nav-ul  {
+list-style: none; width:100%;
+}
+.nav-li{
+  margin-top: 5vw;
+  width: 100%;
+} 
+.menu-item{
+  font-size:30px;
+  text-decoration: none;
+  color: white;
+}
+.nav-li:hover{
+  margin-left: 30px;
+  transition:0.5s  linear 0.2s
+}
+
+.bmBurgerBarsHover{
+  background:rgba(0, 0, 0, 0.3);
+  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.8603816526610644) 85%);
+}

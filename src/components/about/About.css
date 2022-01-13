@@ -24,10 +24,11 @@
 }
 
 .about-img {
-  width: 45%;
+  width: 44%;
   display: flex;
   align-self: center;
   overflow: hidden;
+  height: 250%;
 }
 
 @media only screen and (max-width: 960px) {
