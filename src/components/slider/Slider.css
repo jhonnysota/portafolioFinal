@@ -20,11 +20,19 @@
   overflow: hidden;
   position: relative;
   cursor: pointer;
+
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .slide-container > a > img {
   object-fit: contain;
   transition: all 0.2s ease-in-out;
+
+  width: 450px;
+  height: 300px; 
 }
 
 .slide-container:hover >a> img {

@@ -7,7 +7,7 @@ const About = () => {
       <div className="about-desc">
         <h3>Let me tell you something about me</h3>
         <p>
-          I am a person, self-taught, I like new technologies in the world of programming, I really like reading and setting myself new challenges.
+          Programador con más de cinco años de experiencia generando código para empresas del sector bancario. Creé el nuevo portal web de Santander, el cual recibe más de 1 millón de visitas al día. Los errores reportados en los micrositios del banco se redujeron en un 20% y la retención de usuarios incrementó en un 10%. Especialista en solución de problemas y trabajo en equipo.
         </p>
       </div>
       <div className="about-img">

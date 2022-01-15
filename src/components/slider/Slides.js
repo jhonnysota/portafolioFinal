@@ -2,6 +2,7 @@ import React from "react";
 import "./Slider.css";
 import GitExpert from "../../media/gitExpert.png";
 import Ralitech from "../../media/ralitech.png";
+import CienFragancia from "../../media/cienFragancia.png"
 const slidesInfo = [
   {
     src: GitExpert,
@@ -16,9 +17,9 @@ const slidesInfo = [
     href: "http://www.ralitech.pe/"
   },
   {
-    src: "https://cdn.pixabay.com/photo/2015/02/05/08/06/macbook-624707_960_720.jpg",
-    alt: "Project 3",
-    desc: "Project 3",
+    src: CienFragancia,
+    alt: "Cien Fragancia",
+    desc: "Cien Fragancia",
   },
 ];
 

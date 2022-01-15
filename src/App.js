@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, memo } from "react";
 import "./App.css";
 import Cover from "./components/cover/Cover";
 import Navbar from "./components/navbar/Navbar";
@@ -7,8 +7,10 @@ import Slider from "./components/slider/Slider";
 import Info from "./components/info/Info";
 import Footer from "./components/footer/Footer";
 
-function App() {
+const App = () => {
+
   const [scrollHeight, setScrollHeight] = useState(0);
+  const [widthPage, setWidthPage] = useState(window.innerWidth);
 
   const handleScroll = () => {
     const position = window.pageYOffset;
@@ -16,12 +18,33 @@ function App() {
   };
 
   useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
+    return window.addEventListener("scroll", handleScroll);
   }, [scrollHeight]);
+
+
+  const resize = () => {
+    setWidthPage(window.innerWidth)
+  }
+
+  useEffect(() => {
+    return window.addEventListener("resize", resize);
+  }, [widthPage])
+
+  const handlePosition = (value) => {
+    if (value) {
+      const refCover = document.querySelectorAll(value)
+      const position = refCover[0].offsetTop - 50
+      position && window.scrollTo({ top: position, left: 0, behavior: "smooth" })
+    }
+  }
+
+  useEffect(() => {
+    handlePosition()
+  }, [setWidthPage])
 
   return (
     <div className="App">
-      <Navbar isScrolling={scrollHeight} />
+      <Navbar isScrolling={scrollHeight} widthPage={widthPage} handlePosition={handlePosition} />
       <Cover />
       <About />
       <Slider />
@@ -31,4 +54,4 @@ function App() {
   );
 }
 
-export default App;
+export default memo(App);
