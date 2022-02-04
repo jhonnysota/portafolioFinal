@@ -78,49 +78,47 @@ Note: Beware of modifying this element as it can break the animations - you shou
   background: rgba(0, 0, 0, 0.3);
 }
 
-/* .bmBurgerButton{
-  position: fixed;
-  width: 36px;
-  height: 30px;
-  left: 95%;
-  top: 20px;
+/* boton  flotante */
+
+.botonF1{
+  width:4%;
+  height:60px;
+  /* border-radius:100%; */
+  border-style:none;
+  background:transparent;
+  right:0;
+  bottom:0;
+  position:fixed;
+  margin-right:16px;
+  margin-bottom:300px;
+  color:rgb(191, 0, 0);
+  font-size:40px;
+  transition:.3s; 
+  cursor:pointer;
+}
+ /* .fa-file-pdf{
+   size:16px;
+ } */
+.botonF1:hover i{
+  transform:rotate(360deg);
+}
+.botonF1:active{
+  transform:scale(1.4);
 }
 
-.bmBurgerBars {
-  background: white;
 
-};
-.bmBurgerBarsHover{
-   background: #a90000
+/* scroll */
+body::-webkit-scrollbar {
+  width: 10px;               /* width of the entire scrollbar */
 }
-.bmCrossButton{
-  height: 24px;
-  width: 24px
+
+body::-webkit-scrollbar-track {
+  background: rgb(0, 0, 0)        /* color of the tracking area */
 }
-.bmCross{
-  background: white
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(255, 255, 255);    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  /* border: 3px solid orange;  creates padding around scroll thumb */
 }
-.bmMenuWrap {
-  position: fixed;
-  height: 100%;
-  width: 25%
-}
-.bmMenu{
-  background: transparent;
-  padding: 2.5em 1.5em 0;
-  font-size: 1.15em
-}
-.bmMorphShape {
-  fill: black;
-  width: 100%
-}
-.bmItemList{
-  color: #b8b7ad;
-  padding: 0.8em
-}
-.bmItem{
-  display: inline-block
-}
-.bmOverlay{
-  background: rgba(0, 0, 0, 0.3)
-} */
+

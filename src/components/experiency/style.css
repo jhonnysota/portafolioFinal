@@ -1,0 +1,20 @@
+.body-experiency{
+  display: flex;
+  justify-content: space-around;
+}
+.card{
+  width:30%;
+  display:flex;
+  border:  red solid 1px;
+  box-shadow: 0px 2px 3px 1px black
+}
+.card-title{
+  
+  border:  red solid 1px;
+  text-align: center;
+  display: block;
+  width: 100%;
+}
+.carTotal{
+  align-content: center;
+}

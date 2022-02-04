@@ -1,20 +1,25 @@
 import React from "react";
 import "./About.css";
-import imgFoto from "../../media/yo.jpg"
+// import imgFoto from "../../media/yo.jpg"
+import ImgDemo from "../react-spring/cardIMG"
+
+
 const About = () => {
   return (
     <div className="about-container">
       <div className="about-desc">
         <h3>Let me tell you something about me</h3>
         <p>
-          Programador con más de cinco años de experiencia generando código para empresas del sector bancario. Creé el nuevo portal web de Santander, el cual recibe más de 1 millón de visitas al día. Los errores reportados en los micrositios del banco se redujeron en un 20% y la retención de usuarios incrementó en un 10%. Especialista en solución de problemas y trabajo en equipo.
+          Programador con   experiencia de un año y medio  generando código para empresas para ERP.
+          Creé el modulo de reporte.
+          Los errores reportados los resolvia o mejoras que se implementaba dentro del sistema.
+          Especialista en solución de problemas y trabajo en equipo.
+          Creacion  de un lading page para otras empresa y solucion de errores en pagina de E-Commerce.
+
         </p>
       </div>
       <div className="about-img">
-        <img
-          src={imgFoto}
-          alt="about"
-        />
+        <ImgDemo />
       </div>
     </div>
   );
