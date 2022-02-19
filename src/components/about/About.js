@@ -8,7 +8,7 @@ const About = () => {
   return (
     <div className="about-container">
       <div className="about-desc">
-        <h3>Let me tell you something about me</h3>
+        <h3 className="animate__animated animate__shakeX">Let me tell you something about me</h3>
         <p>
           Programador con   experiencia de un año y medio  generando código para empresas para ERP.
           Creé el modulo de reporte.

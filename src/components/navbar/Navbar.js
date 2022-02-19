@@ -1,7 +1,7 @@
 import React from "react";
 import "./Navbar.css";
 import { bubble as Menu } from 'react-burger-menu'
-import logo from "../../media/logo.png"
+import logo from "../../media/logopagina.png"
 const Navbar = ({ isScrolling, widthPage, handlePosition }) => {
 
   const handleInitial = () => {
@@ -13,10 +13,10 @@ const Navbar = ({ isScrolling, widthPage, handlePosition }) => {
 
 
   return (
-    <div>
+    <div >
       <nav className={`navbar ${isScrolling > 20 ? "scrolling" : null}`}>
         <div className="navbar-logo" >
-          <img src={logo} alt="Logo" style={{ width: "50px", position: 'fixed', marginTop: '1%' }} />
+          <img src={logo} alt="Logo" style={{ width: "100px", position: 'fixed', marginTop: '1%' }} />
           {/* JS */}
           {widthPage >= 930 &&
             <ul className="gx-nav-ul">
@@ -30,7 +30,7 @@ const Navbar = ({ isScrolling, widthPage, handlePosition }) => {
                 <h4 id="contact" className="gx-menu-item" onClick={() => handlePosition('.carousel-container')}><i className="fas fa-tasks" style={{ marginRight: '10px' }}></i>Project</h4>
               </li>
               <li className="gx-nav-li">
-                <h4 className="gx-menu-item" ><i className="fas fa-database" style={{ marginRight: '10px' }}></i>Experience</h4>
+                <h4 className="gx-menu-item" onClick={() => handlePosition('.body-experiency')} ><i className="fas fa-database" style={{ marginRight: '10px' }}></i>Experience</h4>
               </li>
               <li className="gx-nav-li" >
                 <h4 className="gx-menu-item" onClick={handleEnd}><i className="fas fa-phone-square-alt" style={{ marginRight: '10px' }}></i>Contactame</h4>
@@ -54,7 +54,7 @@ const Navbar = ({ isScrolling, widthPage, handlePosition }) => {
                 <h1 id="contact" className="menu-item" onClick={() => handlePosition('.carousel-container')}><i className="fas fa-tasks" style={{ marginRight: '20px' }}></i>Project</h1>
               </li>
               <li className="nav-li">
-                <h1 className="menu-item" ><i className="fas fa-camera" style={{ marginRight: '20px' }}></i>Experience</h1>
+                <h1 className="menu-item" ><i className="fas fa-camera" onClick={() => handlePosition('.body-experiency')} style={{ marginRight: '20px' }}></i>Experience</h1>
               </li>
 
               <li className="nav-li">

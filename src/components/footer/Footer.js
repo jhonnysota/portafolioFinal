@@ -5,23 +5,23 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-info">
-        <h1>Your Name</h1>
-        <p>Based in Your City</p>
+        <h1>Jhonny Sota</h1>
+        <p>Perú, Lima</p>
       </div>
       <div className="footer-contact">
         <h3>Contact me</h3>
         <p>And let's get down to work</p>
       </div>
       <div className="footer-sns">
-        <div className="design-by">Design By Your Name</div>
+        <div className="design-by">Design By jhonny sota </div>
         <div className="sns-links">
-          <a href="https://linkedin.com" target="_blank" rel="noreferrer">
+          <a href="https://www.linkedin.com/in/jhonny-sota-bautista-21288314b/" target="_blank" rel="noreferrer">
             <i className="fab fa-linkedin linkedin"></i>
           </a>
-          <a href="https://twitter.com" target="_blank" rel="noreferrer">
-            <i className="fab fa-twitter twitter"></i>
+          <a href="https://api.whatsapp.com/send?phone=+961190121&text=he%20visto%20tu%20pagina,%20y%20deseamos%20hablar%20contigo." target="_blank" rel="noreferrer">
+            <i className="fab fa-whatsapp twitter"></i>
           </a>
-          <a href="https://facebook.com" target="_blank" rel="noreferrer">
+          <a href="https://www.facebook.com/profile.php?id=100001123840740" target="_blank" rel="noreferrer">
             <i className="fab fa-facebook facebook"></i>
           </a>
         </div>

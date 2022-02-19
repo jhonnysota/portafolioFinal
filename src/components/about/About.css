@@ -33,6 +33,7 @@
   overflow: hidden;
   transition: 1s;
 }
+ 
 .about-img>img{
   width: 100%;
 }
@@ -60,7 +61,8 @@
   }
 
   .about-img {
-    width: 100%;
+    width: 60%;
+    margin-left:-20px;
     margin-bottom: 50px;
   }
 

@@ -8,9 +8,8 @@ const Cover = () => {
   return (
     <div className="cover-container">
       <video className="video" src={coverVideo} autoPlay loop muted />
-      <h1>JHONNY SOTA </h1>
-      {/* <Toggle /> */}
-      <p>Developer | dSQL | REACTJS | REDUX </p>
+      <h1 className="animate__animated animate__bounce">JHONNY SOTA </h1>
+      <p>Developer | SQL | REACTJS | REDUX </p>
     </div>
   );
 };

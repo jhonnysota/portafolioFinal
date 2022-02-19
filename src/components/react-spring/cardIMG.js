@@ -14,7 +14,8 @@ const CardIMG = () => {
     height: "45ch",
     background: "grey",
     borderRadius: "5px",
-    backgroundImage: "url(../../media/yo.jpg)",
+    // backgroundImage: "url(../../media/yo.jpg)",
+
     backgroundSize: "cover",
     backgroundPosition: "center center",
     boxShadow: "0px 10px 30px -5px rgba(0,0,0, 0.3)",

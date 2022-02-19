@@ -106,6 +106,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
   transform:scale(1.4);
 }
 
+@media only screen and (max-width: 960px) {
 
 /* scroll */
 body::-webkit-scrollbar {
@@ -121,4 +122,4 @@ body::-webkit-scrollbar-thumb {
   border-radius: 20px;       /* roundness of the scroll thumb */
   /* border: 3px solid orange;  creates padding around scroll thumb */
 }
-
+}
