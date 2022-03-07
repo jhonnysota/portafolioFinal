@@ -124,10 +124,12 @@ const Navbar = ({ isScrolling, widthPage, handlePosition }) => {
                 </h1>
               </li>
               <li className="nav-li">
-                <h1 className="menu-item">
+                <h1
+                  className="menu-item"
+                  onClick={() => handlePosition(".body-experiency")}
+                >
                   <i
-                    className="fas fa-camera"
-                    onClick={() => handlePosition(".body-experiency")}
+                    className="fas fa-database"
                     style={{ marginRight: "20px" }}
                   ></i>
                   Experience

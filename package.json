@@ -2,7 +2,7 @@
   "name": "portfolio-react",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://jhonnysota/github.io/portafolioFinal",
+  "homepage": "https://jhonnysota.github.io/portafolioFinal/",
   "dependencies": {
     "@brainhubeu/react-carousel": "^1.19.26",
     "@testing-library/jest-dom": "^5.11.6",
