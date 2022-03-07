@@ -6,10 +6,9 @@ import About from "./components/about/About";
 import Slider from "./components/slider/Slider";
 import Info from "./components/info/Info";
 import Footer from "./components/footer/Footer";
-import Experiency from "./components/experiency"
-import pdf from "./media/cvJhonnySota.pdf"
+import Experiency from "./components/experiency";
+import pdf from "./media/cvJhonnySota.pdf";
 const App = () => {
-
   const [scrollHeight, setScrollHeight] = useState(0);
   const [widthPage, setWidthPage] = useState(window.innerWidth);
 
@@ -22,44 +21,47 @@ const App = () => {
     return window.addEventListener("scroll", handleScroll);
   }, [scrollHeight]);
 
-
   const resize = () => {
-    setWidthPage(window.innerWidth)
-  }
+    setWidthPage(window.innerWidth);
+  };
 
   useEffect(() => {
     return window.addEventListener("resize", resize);
-  }, [widthPage])
+  }, [widthPage]);
 
   const handlePosition = (value) => {
     if (value) {
-      const refCover = document.querySelectorAll(value)
-      const position = refCover[0].offsetTop - 50
-      position && window.scrollTo({ top: position, left: 0, behavior: "smooth" })
+      const refCover = document.querySelectorAll(value);
+      const position = refCover[0].offsetTop - 50;
+      position &&
+        window.scrollTo({ top: position, left: 0, behavior: "smooth" });
     }
-  }
+  };
 
   useEffect(() => {
-    handlePosition()
-  }, [setWidthPage])
+    handlePosition();
+  }, [setWidthPage]);
 
   const handleDowloadPDF = () => {
-
     // const records = data ?? []
     // const blob = new Blob([records])
     // const fileDownloadUrl = URL.createObjectURL(blob)
-    let a = document.createElement('A')
-    a.href = pdf
-    a.class = 'gx-d-none'
-    a.download = 'CV-JHONNYSOTA.pdf'
-    document.body.appendChild(a)
-    a.click()
-    document.body.removeChild(a)
-  }
+    let a = document.createElement("A");
+    a.href = pdf;
+    a.class = "gx-d-none";
+    a.download = "CV-JHONNYSOTA.pdf";
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+  };
 
   return (
     <div className="App">
-      <Navbar isScrolling={scrollHeight} widthPage={widthPage} handlePosition={handlePosition} />
+      <Navbar
+        isScrolling={scrollHeight}
+        widthPage={widthPage}
+        handlePosition={handlePosition}
+      />
       <Cover />
       <About />
       <Slider />
@@ -73,6 +75,6 @@ const App = () => {
       </button>
     </div>
   );
-}
+};
 
 export default memo(App);

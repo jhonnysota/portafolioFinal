@@ -24,22 +24,10 @@
 }
 
 .about-img {
-  width: 30%;
-  height: 160%;
-  border-radius: 180%;
-  margin-left: 100px;
   display: flex;
   align-self: center;
   overflow: hidden;
   transition: 1s;
-}
- 
-.about-img>img{
-  width: 100%;
-}
-.about-img:hover{
-  margin-bottom: 50px;
-  transition:1s
 }
 
 @media only screen and (max-width: 960px) {
@@ -58,15 +46,5 @@
   .about-desc > h3 {
     font-size: 20px;
     text-align: center;
-  }
-
-  .about-img {
-    width: 60%;
-    margin-left:-20px;
-    margin-bottom: 50px;
-  }
-
-  .about-img > img {
-    width: 100%;
   }
 }
