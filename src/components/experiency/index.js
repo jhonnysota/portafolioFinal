@@ -25,7 +25,7 @@ const Index = () => {
 
   return (
     <div className="body-experiency">
-      <h1 className="title-experiency">My Experience</h1>
+      <h1 className="title-experiency">Mi experiencia</h1>
       <div className="card-exp">
         {data.map((item) => {
           return (
@@ -33,7 +33,7 @@ const Index = () => {
               <div>
                 <img className="img-exp" src={item.img} alt="logoEmpresa" />
               </div>
-              <div>
+              <div className="info-exp-text">
                 <h3>{item.title}</h3>
                 <p>{item.business}</p>
                 <p>{item.time}</p>

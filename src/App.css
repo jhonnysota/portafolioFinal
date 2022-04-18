@@ -5,7 +5,6 @@
   font-family: "Roboto", sans-serif;
 }
 
-
 /* BURGER */
 /* Position and sizing of burger button */
 .bm-burger-button {
@@ -26,8 +25,9 @@
 /* Color/shape of burger icon bars on hover*/
 .bm-burger-bars-hover {
   background: #444444;
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(192, 190, 190, 0.59);
-  transition:1s
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(192, 190, 190, 0.59);
+  transition: 1s;
 }
 
 /* Position and sizing of clickable cross button */
@@ -80,46 +80,45 @@ Note: Beware of modifying this element as it can break the animations - you shou
 
 /* boton  flotante */
 
-.botonF1{
-  width:4%;
-  height:60px;
-  /* border-radius:100%; */
-  border-style:none;
-  background:transparent;
-  right:0;
-  bottom:0;
-  position:fixed;
-  margin-right:16px;
-  margin-bottom:300px;
-  color:rgb(191, 0, 0);
-  font-size:40px;
-  transition:.3s; 
-  cursor:pointer;
+.botonF1 {
+  width: 4%;
+  height: 60px;
+  border-style: none;
+  background: transparent;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+  margin-right: 16px;
+  margin-bottom: 20px;
+  color: rgb(191, 0, 0);
+  font-size: 40px;
+  transition: 0.7s;
+  cursor: pointer;
 }
- /* .fa-file-pdf{
+/* .fa-file-pdf{
    size:16px;
  } */
-.botonF1:hover i{
-  transform:rotate(360deg);
+.botonF1:hover {
+  transform: rotate(360deg);
+  transition: 1s;
 }
-.botonF1:active{
-  transform:scale(1.4);
+.botonF1:active {
+  transform: scale(1.4);
 }
 
 @media only screen and (max-width: 960px) {
+  /* scroll */
+  body::-webkit-scrollbar {
+    width: 10px; /* width of the entire scrollbar */
+  }
 
-/* scroll */
-body::-webkit-scrollbar {
-  width: 10px;               /* width of the entire scrollbar */
-}
+  body::-webkit-scrollbar-track {
+    background: rgb(0, 0, 0); /* color of the tracking area */
+  }
 
-body::-webkit-scrollbar-track {
-  background: rgb(0, 0, 0)        /* color of the tracking area */
-}
-
-body::-webkit-scrollbar-thumb {
-  background-color: rgb(255, 255, 255);    /* color of the scroll thumb */
-  border-radius: 20px;       /* roundness of the scroll thumb */
-  /* border: 3px solid orange;  creates padding around scroll thumb */
-}
+  body::-webkit-scrollbar-thumb {
+    background-color: rgb(255, 255, 255); /* color of the scroll thumb */
+    border-radius: 20px; /* roundness of the scroll thumb */
+    /* border: 3px solid orange;  creates padding around scroll thumb */
+  }
 }

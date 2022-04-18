@@ -29,7 +29,7 @@ const Navbar = ({ isScrolling, widthPage, handlePosition }) => {
                     className="fas fa-home"
                     style={{ marginRight: "10px" }}
                   ></i>
-                  Home
+                  Inicio
                 </h4>
               </li>
               <li className="gx-nav-li">
@@ -42,7 +42,7 @@ const Navbar = ({ isScrolling, widthPage, handlePosition }) => {
                     className="fas fa-address-card"
                     style={{ marginRight: "10px" }}
                   ></i>
-                  About
+                  Sobre mi
                 </h4>
               </li>
               <li className="gx-nav-li">
@@ -55,7 +55,7 @@ const Navbar = ({ isScrolling, widthPage, handlePosition }) => {
                     className="fas fa-tasks"
                     style={{ marginRight: "10px" }}
                   ></i>
-                  Project
+                  Proyecto
                 </h4>
               </li>
               <li className="gx-nav-li">
@@ -67,7 +67,7 @@ const Navbar = ({ isScrolling, widthPage, handlePosition }) => {
                     className="fas fa-database"
                     style={{ marginRight: "10px" }}
                   ></i>
-                  Experience
+                  Experiencia
                 </h4>
               </li>
               <li className="gx-nav-li">
@@ -94,7 +94,7 @@ const Navbar = ({ isScrolling, widthPage, handlePosition }) => {
                     className="fas fa-home"
                     style={{ marginRight: "20px" }}
                   ></i>
-                  Home
+                  Inicio
                 </h1>
               </li>
               <li className="nav-li">
@@ -107,7 +107,7 @@ const Navbar = ({ isScrolling, widthPage, handlePosition }) => {
                     className="fas fa-address-card"
                     style={{ marginRight: "20px" }}
                   ></i>
-                  About
+                  Sobre Mi
                 </h1>
               </li>
               <li className="nav-li">
@@ -120,7 +120,7 @@ const Navbar = ({ isScrolling, widthPage, handlePosition }) => {
                     className="fas fa-tasks"
                     style={{ marginRight: "20px" }}
                   ></i>
-                  Project
+                  Proyectos
                 </h1>
               </li>
               <li className="nav-li">
@@ -132,7 +132,7 @@ const Navbar = ({ isScrolling, widthPage, handlePosition }) => {
                     className="fas fa-database"
                     style={{ marginRight: "20px" }}
                   ></i>
-                  Experience
+                  Experiencia
                 </h1>
               </li>
 

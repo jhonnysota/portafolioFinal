@@ -7,7 +7,7 @@ import Slider from "./components/slider/Slider";
 import Info from "./components/info/Info";
 import Footer from "./components/footer/Footer";
 import Experiency from "./components/experiency";
-import pdf from "./media/cvJhonnySota.pdf";
+import pdf from "./media/cvjhonnysotaCL.pdf";
 const App = () => {
   const [scrollHeight, setScrollHeight] = useState(0);
   const [widthPage, setWidthPage] = useState(window.innerWidth);
@@ -43,9 +43,6 @@ const App = () => {
   }, [setWidthPage]);
 
   const handleDowloadPDF = () => {
-    // const records = data ?? []
-    // const blob = new Blob([records])
-    // const fileDownloadUrl = URL.createObjectURL(blob)
     let a = document.createElement("A");
     a.href = pdf;
     a.class = "gx-d-none";

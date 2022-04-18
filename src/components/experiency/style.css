@@ -4,37 +4,28 @@
   color: black;
   border: 1px solid rgb(255, 255, 255);
   display: flex;
+  width: 100%;
+  align-items: center;
+  padding-left: 10%;
 }
 .info-experiency {
   margin-bottom: 5%;
   display: flex;
+  width: 100%;
+
+  align-items: center;
 }
 .title-experiency {
   text-align: center;
-  display: block;
-  font-size: 2.3em;
-  font-weight: bold;
-  align-items: flex-start;
-  padding-top: 8%;
-  padding-left: 10%;
+  margin-bottom: 5%;
+  padding-top: 5%;
 }
-@media only screen and (max-width: 500px) {
-  .title-experiency {
-    text-align: center;
-    display: flex;
-    font-size: 1em;
-    font-weight: bold;
-    align-items: flex-start;
-    padding-top: 70%;
-    padding-left: 10%;
+@media only screen and (max-width: 700px) {
+  .body-experiency {
+    display: block;
   }
 }
-.card-exp {
-  width: 50%;
-  margin-bottom: 10px;
-  margin-left: 5%;
-  align-items: flex-end;
-}
+
 .img-exp {
   height: 48px;
   width: 60px;
